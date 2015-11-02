@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/stylesheet.css">
+    <script type="text/javascript" src="./vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/app.js"></script>
+</head>
+
+<body class="container">
+
+    <form id="inputData">
+        <label for="firstNumber">Enter a Number:</label>
+        <input type="text" id="firstNumber" name="firstNumber" placeholder="First Number">
+        <label for="secondNumber">Enter Another Number:</label>
+        <input type="text" id="secondNumber" name="secondNumber" placeholder="Second Number">
+    </form>
+
+    <div data-role="add" class="math btn btn-default">Add</div>
+    <div data-role="subtract" class="math btn btn-default">Subtract</div>
+    <div data-role="multiply" class="math btn btn-default">Multiply</div>
+    <div data-role="divide" class="math btn btn-default">Divide</div>
+    <div class="clearance btn btn-danger">Clear</div>
+
+    <div id="resultDisplay"></div>
+
+</body>
+</html>
