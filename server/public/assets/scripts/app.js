@@ -15,7 +15,6 @@ function onClick (){
         var mathTypeBuilder = $(this).data('role');
         buildDataObject(mathTypeBuilder);
         sendData();
-        //getData();
     });
 }
 
@@ -70,13 +69,3 @@ function sendData (){
 function appendDom (data){
     $('#resultDisplay').append('<p>Calculation Result: ' + data + '</p>');
 }
-
-//function getData (){
-//    $.ajax({
-//        type: "GET",
-//        url: "/data",
-//        success: function(data){
-//            console.log("Get call success! Result is: ", data);
-//        }
-//    });
-//}

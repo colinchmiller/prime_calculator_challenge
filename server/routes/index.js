@@ -11,9 +11,6 @@ router.route('/data')
     .post( function(req, res){
         mathResult = mathCalc(req.body.mathType, req.body.firstNumber, req.body.secondNumber);
         res.send(mathResult.toString());
-    //})
-    //.get( function (req, res){
-    //    res.send(mathResult.toString());
 });
 
 router.get("/*", function(req, res) {
